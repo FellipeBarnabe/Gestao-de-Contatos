@@ -1,12 +1,11 @@
 <?php
 
-// Escapa texto para exibir com segurança no HTML (proteção contra XSS)
+
 function e(?string $texto): string
 {
     return htmlspecialchars($texto ?? '', ENT_QUOTES, 'UTF-8');
 }
 
-// Lê e limpa os campos do contato a partir de $_POST
 function lerDadosContato(array $origem): array
 {
     $dados = [];
@@ -17,7 +16,6 @@ function lerDadosContato(array $origem): array
     return $dados;
 }
 
-// Valida os dados e devolve a lista de erros (vazia = tudo certo)
 function validarContato(array $dados): array
 {
     $erros = [];

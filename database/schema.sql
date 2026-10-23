@@ -15,4 +15,4 @@ CREATE TABLE IF NOT EXISTS contatos (
   endereco    VARCHAR(255) NOT NULL,
   created_at  TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,                 -- data/hora do cadastro
   PRIMARY KEY (id)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=UTF8MB4;contatos

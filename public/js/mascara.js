@@ -1,4 +1,3 @@
-// Máscara de telefone brasileiro: (83) 99999-9999
 const campoTelefone = document.querySelector('input[name="telefone"]');
 
 if (campoTelefone) {
@@ -17,6 +16,5 @@ if (campoTelefone) {
     campoTelefone.value = formatar(campoTelefone.value);
   });
 
-  // Formata também o valor que já vem preenchido (tela de editar)
   campoTelefone.value = formatar(campoTelefone.value);
 }
